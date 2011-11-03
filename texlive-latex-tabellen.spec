@@ -1,3 +1,9 @@
+# revision 16979
+# category Package
+# catalog-ctan /info/examples/Tabellen2
+# catalog-date 2010-02-12 13:59:30 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-latex-tabellen
 Version:	20100212
 Release:	1
@@ -340,6 +346,7 @@ The examples from the book <<Tabellen mit LaTeX>>, 2nd ed.
 %doc %{_texmfdistdir}/doc/latex/latex-tabellen/07-03-1.ltx2
 %doc %{_texmfdistdir}/doc/latex/latex-tabellen/07-03-2.ltx2
 %doc %{_texmfdistdir}/doc/latex/latex-tabellen/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -350,3 +357,5 @@ The examples from the book <<Tabellen mit LaTeX>>, 2nd ed.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
