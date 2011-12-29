@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex-tabellen.do
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The examples from the book <<Tabellen mit LaTeX>>, 2nd ed.
@@ -346,7 +344,6 @@ The examples from the book <<Tabellen mit LaTeX>>, 2nd ed.
 %doc %{_texmfdistdir}/doc/latex/latex-tabellen/07-03-1.ltx2
 %doc %{_texmfdistdir}/doc/latex/latex-tabellen/07-03-2.ltx2
 %doc %{_texmfdistdir}/doc/latex/latex-tabellen/README
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -357,5 +354,3 @@ The examples from the book <<Tabellen mit LaTeX>>, 2nd ed.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
