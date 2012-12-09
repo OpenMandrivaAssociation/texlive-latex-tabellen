@@ -354,3 +354,17 @@ The examples from the book <<Tabellen mit LaTeX>>, 2nd ed.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100212-2
++ Revision: 753199
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100212-1
++ Revision: 718827
+- texlive-latex-tabellen
+- texlive-latex-tabellen
+- texlive-latex-tabellen
+- texlive-latex-tabellen
+
