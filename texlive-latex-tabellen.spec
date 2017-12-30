@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-latex-tabellen
-Version:	20100212
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	LaTeX Tabellen
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/Tabellen2
