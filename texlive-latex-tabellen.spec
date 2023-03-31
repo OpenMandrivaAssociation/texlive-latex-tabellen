@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-latex-tabellen
 Version:	20190228
-Release:	1
+Release:	2
 Summary:	LaTeX Tabellen
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/examples/Tabellen2
